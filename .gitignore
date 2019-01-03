@@ -110,8 +110,7 @@ csx
 # Windows Store app package directory
 AppPackages/
 
-# VSCode
-.vscode/
+
 
 # Others
 sql/
