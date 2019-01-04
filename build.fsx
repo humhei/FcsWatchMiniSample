@@ -1,8 +1,9 @@
 #r "paket:
+git https://github.com/humhei/Paket_NugetServer.git NugetStore Packages: /.nuget/
+source https://api.nuget.org/v3/index.json
 nuget Atrous.Core.Utils
 nuget Fake.Core.Target
 nuget FcsWatch //"
-
 #load "./.fake/build.fsx/intellisense.fsx"
 
 // start build
