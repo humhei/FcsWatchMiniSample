@@ -4,5 +4,5 @@ open System
 
 [<EntryPoint>]
 let main argv =
-    printfn "Helsadsdaasdsslo W or  lds fr    om F#!"
+    printfn "ssss2dsasadsad11221"
     0 // return an integer exit code
