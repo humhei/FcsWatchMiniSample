@@ -1,5 +1,4 @@
 #r "paket:
-git https://github.com/humhei/Paket_NugetServer.git NugetStore Packages: /.nuget/
 source https://api.nuget.org/v3/index.json
 nuget Fake.Core.Target
 nuget FcsWatch //"
@@ -19,6 +18,4 @@ Target.create "FcsWatch" (fun _ ->
     runFcsWatcher checker projectFile
 )
 
-Target.create "Default" ignore
-
-Target.runOrDefault "Default"
+Target.runOrDefault "FcsWatch"
