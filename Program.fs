@@ -4,5 +4,5 @@ open System
 
 [<EntryPoint>]
 let main argv =
-    printfn "ssss2dsasadsad11221"
+    printfn "11221"
     0 // return an integer exit code

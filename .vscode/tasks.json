@@ -2,19 +2,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build FcsWatch",
-            "command": "dotnet",
-            "group": "build",
-            "args": [
-                "build",
-                "FcsWatch.Tests/FcsWatch.Tests.fsproj"
-            ],
-            "presentation": {
-                "reveal": "silent"
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
             "label": "emitCompilerTmp",
             "command": "curl",
             "args": [
@@ -24,41 +11,6 @@
             "presentation": {
                 "reveal": "never"
             }
-        },
-        {
-            "label": "FcsWatch",
-            "command": "fake",
-            "group": "build",
-            "args": [
-                "build",
-                "-t",
-                "FcsWatch"
-            ],
-            "problemMatcher": []
-            
-        },
-        {
-            "label": "BetaVersion.Publish",
-            "command": "fake",
-            "group": "build",
-            "args": [
-                "build",
-                "-t",
-                "BetaVersion.Publish"
-            ],
-            "problemMatcher": []
-            
-        },
-        {
-            "label": "BetaVersion.UpdateDependencies",
-            "command": "fake",
-            "group": "build",
-            "args": [
-                "build",
-                "-t",
-                "BetaVersion.UpdateDependencies"
-            ],
-            "problemMatcher": []
         },
     ]
 }
