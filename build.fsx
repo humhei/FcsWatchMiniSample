@@ -13,7 +13,10 @@ open Fake.DotNet
 
 Target.create "FcsWatch" (fun _ ->  
     let projectFile = Path.getFullName "FcsWatchMiniSample.fsproj"
-    DotNet.build id projectFile
+    DotNet.build (fun ops ->
+      { ops with
+        Configuration = DotNet.BuildConfiguration.Debug }
+    ) projectFile
     let checker = FSharpChecker.Create()
     runFcsWatcher checker projectFile
 )
