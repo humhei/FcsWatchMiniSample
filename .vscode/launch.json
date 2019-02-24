@@ -10,7 +10,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "emitCompilerTmp",
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.0/FcsWatchMiniSample.exe",
+            "program": "${workspaceFolder}/FcsWatchMiniSample/bin/Debug/netcoreapp2.2/FcsWatchMiniSample.dll",
         },
     ]
 }
